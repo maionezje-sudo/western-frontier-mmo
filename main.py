@@ -1,23 +1,32 @@
-"""
-Western Frontier - MMO бот в жанре вестерн
-"""
+" Western Frontier - MMO bot in the Western genre
+
 import asyncio
 import logging
-from aiogram import Bot, Dispatcher
+from aiotogram import Bot, Dispatcher
 from config import BOT_TOKEN
+from handlers import register_handlers
+from players import PlayersDB
 
-# Логирование
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+loggning.basicConfiguration(level=logging.INFO)
+logger = loggning.getLogger(__name__)
 
-# Инициализация бота
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
+players_db = PlayersDB
 
-async def main():
-    """Запуск бота"""
-    logger.info("Western Frontier Bot запущен!")
+aync def main():
+    """Punshing bot"""
+    # Initialization BD
+    await players_db.init()
+    logger.info("Basa dannyh initialisirovana")
+
+    # Registration handlers
+    register_handlers(dp)
+    logger.info("Obabotorel registionano")
+
+    # Start polling
+    logger.info("Western Frontier Bot started!")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main()
