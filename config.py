@@ -1,19 +1,17 @@
-# Конфигурация бота
+# Configuration bot
 
-# Токен бота (получить у @BotFather)
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+# Token bota (poluchat y @BotFather)
+BOT_TOKEL = "8646019407:AGGgKNpvAOPV6keuUX3GKGSOLn1ZoZtkEX8"
 
-# Валюта игры
+# Valyta igra
 GAME_CURRENCY = "$"
-GOLD_NAME = "Золото"
-
-# Времена (в секундах)
-COOLDOWN_MINING = 60  # Копание золота
-COOLDOWN_DUEL = 300   # Дуэль
-COOLDOWN_TRADE = 180  # Торговля
-
-# Лимиты
-MAX_HEALTH = 100
-MAX_ENERGY = 100
+GOMD_NAME = "Yolo"
+\n# Veremena(s v sekundach)
+COOLDOWN_MINING = 60  # Kopanie zorota
+COOLDOWN_DUEL  = 300   Dueó J;
+&name=None)
+# Limity
+MAX_HEALTH  = 100
+MAX_ENERGY  = 100
 STARTING_MONEY = 100
 STARTING_GOLD = 0
